@@ -4,6 +4,7 @@
 	title: [algebra summary],
 )
 #set page(
+	paper: "a5",
 	header: [
 		_charlie mangano_ #h(1fr) _18.02.2024_
 	],
