@@ -200,9 +200,9 @@
 
 == equivalence and congruence relations. quotient ring.
 #item("def", name: "equivalence relation", [$E$ set and $x tilde y$ relation on $E$, $ forall x in E, x tilde x "  (reflexive)" \ forall x,y in E, x tilde y => y tilde x "  (symmetric)" \ forall x,y,z in E, x tilde y and y tilde z => x tilde z "  (transitive)" $])
-#item("def", name:"equivalence class", [$E$ set and $x in E$, $ [x]_tilde = {y in E: x tilde y} subset E $])
-#remark([_quotient set_ *::* $E$ set, $E\/tilde {[x]_tilde, forall x in E}$])
-#remark([$E$ set, $forall x,y in E, x != y => [x]_tilde = [y]_tilde or [x]_tilde sect [y]_tilde = emptyset$])
+#item("def", name:"equivalence class", [$E$ set and $x in E$, $ macron(x)_E = {y in E: x tilde y} subset E $])
+#remark([_quotient set_ *::* $E$ set, $E\/ tilde" "= {macron(x)_E, forall x in E}$])
+#remark([$E$ set, $forall x,y in E, x != y => macron(x) = macron(y) or macron(x) sect macron(y) = emptyset$])
 #item("def", name: "congruence relation", [$A$ commutative and $tilde$ equivalence relation, $ forall a,b,c,d in A, a tilde b and c tilde d => a plus c tilde b plus d and a dot c tilde b dot c $])
 #item("prop", [$A$ commutative and $tilde$ congruence relation, $ e_plus tilde.not e_dot => A\/tilde "structure of commutative ring" $])
 #remark([$A$ commutative ring and $I subset A$ ideal, $a tilde b <=> (a - b) in I "congruence relation in" A$])
@@ -228,6 +228,12 @@
 #item("prop", [$A,B$ commutative rings, $ c_A != e_plus and c_B != e_plus => c_(A times B) = "lcm"(c_A, c_B) $])
 
 == chinese remainder theorem.
+#item("th", [$A "commutative ring and" I,J subset A$ ideals, $ I plus J = A => exists f : A\/(I sect J) -> A\/I times A\/J "ring isomorphism" \ "and "f : macron(x)_(I sect J) -> (macron(x)_I, macron(x)_J) $])
+#item("corr", [$m,n in ZZ$ and $gcd(m,n) = 1$, $ forall a_1,a_2 in ZZ, exists a in ZZ : a equiv a_1 (mod m) and a equiv a_2 (mod n) \ a "solution" => {a + m n ZZ} "solutions"  $])
+#item("th", [$d_1, dots, d_n in ZZ : forall i != j, gcd(d_i,d_j) = 1$ and $d = d_1 dots d_n$, $ f : ZZ\/(d) -> ZZ\/(d_1) times dots times ZZ\/(d_n) \ f([a]_d) = ([a]_(d_1), dots, [a]_(d_n)) $])
+#item("corr", [$d_1, dots, d_n in ZZ : forall i != j, gcd(d_i,d_j) = 1$ and $d = d_1 dots d_n$, $ forall a_1, dots, a_r in ZZ, exists a in ZZ : cases(a equiv a_1 (mod d_1), dots, a equiv a_r (mod d_r)) \ a "solution" => {a plus d ZZ} "solutions" $])
+
+== polynomials in one variable with coefficients in commutative ring
 
 
 
